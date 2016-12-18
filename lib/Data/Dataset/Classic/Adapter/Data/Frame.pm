@@ -21,6 +21,10 @@ use Module::Load;
 
 Adapts a Data::Dataset::Classic to a PDL object. 
 
+=method new
+
+Constructs a new adapter
+
 =cut
 
 sub new {
