@@ -50,4 +50,10 @@ sub get {
 	return Data::Dataset::Classic::_adapt($dataset, @_);	
 }
 
+=head1 SEE ALSO
+
+L<Wikipedia: Iris flower dataset|https://en.wikipedia.org/wiki/Iris_flower_data_set>
+
+
+
 1;

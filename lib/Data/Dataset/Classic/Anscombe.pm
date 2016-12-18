@@ -58,4 +58,8 @@ sub get {
 	return Data::Dataset::Classic::_adapt($dataset, @_);	
 }
 
+=head1 SEE ALSO
+
+L<Wikipedia: Anscombe's quartet|https://en.wikipedia.org/wiki/Anscombe's_quartet>
+
 1;
