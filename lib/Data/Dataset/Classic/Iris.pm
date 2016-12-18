@@ -8,9 +8,9 @@ use Data::Dataset::Classic;
 
 # VERSION
 
-=encoding utf-8
-
 # ABSTRACT: Iris classic dataset
+
+=encoding utf-8
 
 =head1 SYNOPSIS
 
