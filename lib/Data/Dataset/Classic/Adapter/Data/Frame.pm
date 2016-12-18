@@ -14,11 +14,12 @@ use Module::Load;
 
 =head1 SYNOPSIS
 
-# EXAMPLE: examples/iris.pl
+	use Data::Dataset::Classic::Anscombe
+	my $anscombe = Data::Dataset::Classic::Anscombe::get(as => 'PDL')
 
-=method new
+=head1 DESCRIPTION
 
-Constructs a new adapter
+Adapts a Data::Dataset::Classic to a PDL object. 
 
 =cut
 

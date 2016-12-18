@@ -14,7 +14,12 @@ use Module::Load;
 
 =head1 SYNOPSIS
 
-# EXAMPLE: examples/iris.pl
+	use Data::Dataset::Classic::Anscombe
+	my $anscombe = Data::Dataset::Classic::Anscombe::get(as => 'Data::Table')
+
+=head1 DESCRIPTION
+
+Adapts a Data::Dataset::Classic to a PDL::Matrix object. 
 
 =method new
 

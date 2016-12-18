@@ -14,7 +14,12 @@ use Module::Load;
 
 =head1 SYNOPSIS
 
-# EXAMPLE: examples/pdl.pl
+	use Data::Dataset::Classic::Anscombe
+	my $anscombe = Data::Dataset::Classic::Anscombe::get(as => 'PDL')
+
+=head1 DESCRIPTION
+
+Adapts a Data::Dataset::Classic to a PDL object. 
 
 =method new
 
