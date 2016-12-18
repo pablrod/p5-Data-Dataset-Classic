@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use utf8;
 
-use Storable;
+use Data::Dataset::Classic;
 
 # VERSION
 
@@ -47,23 +47,7 @@ setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa setosa set
 		};
 
 sub get {
-	my %params = @_;
-	
-	my $data = Storable::dclone($dataset);
-	my $as = $params{'as'};
-	if (defined $as) {
-		my $adapter_name = 'Data::Dataset::Classic::Adapter::' . $as;
-        eval {
-            Module::Load::load $adapter_name;
-            my $adapter = $adapter_name->new();
-			$data = $adapter->from($data);
-        };
-        if ($@) {
-            warn 'Cannot load adapter: ' . $adapter_name . '. Returning data as a hashref. ' . $@;
-        }
-	}
-	
-	return $data;	
+	return Data::Dataset::Classic::_adapt($dataset, @_);	
 }
 
 1;
